@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página que explica el videojuego Blood Run</title>
+    <script defer src="nosferatu.js"></script>
+    <link href="nosferatu.css" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html, charset=UTF-8"
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logo.png" alt="logo blood run"/>
+        <h1>BLOOD RUN</h1>
+    </header>
+    <section class="contenido">
+        <section>
+            <p id="descripcion">¿Cansado de los videojuegos de siempre donde debes derrotar a las fuerzas del mal y
+                salvar al mundo?
+                Te presentamos Bloods Run, un videojuego donde podrás meterte en la piel del mismísimo
+                Nosferatu, cuyo objetivo esta vez es conseguir la hegemonía vampírica en el mundo.
+                Derrota a la orden blanca, un grupo cristiano, que por medio de sus esbirros intentarán
+                detenerte para que tus planes fracasen.
+                ¿Podrás conseguirlo?</p>
+        </section>
+        <section>
+            <!--Tab-->
+            <div class="contenedor">
+                <ul class="ul">
+                    <li class="li activo">Personajes</li>
+                    <li class="li">Escenarios</li>
+                    <li class="li">Audios</li>
+                    <li class="li">Video</li>
+                </ul>
+                <!--Lightbox-->
+                <div class="subcontenedor">
+                    <div class="bloque activo">
+                        <ul class="ul2">
+                            <li class="li2" id="imagen1">
+                                <a href="#" class="a" title="Imagen 1">
+                                    <img src="img/nosferatuPixel.svg" alt="Imagen 1" class="img2" loading="lazy" id="nosferatu">
+                                    <p class="Nombre">Nosferatu</p>
+                                </a>
+                            </li>
+                            <li class="li2" id="imagen2">
+                                <a href="#" class="a" title="Imagen 2">
+                                    <img src="img/cazador-final.svg" alt="Imagen 2" class="img2" loading="lazy" id="cazador">
+                                    <p class="Nombre">Cazador</p>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <div class="lightbox">
+                            <img src="img/nosferatuPixel.svg" alt="Imagen 1" class="grande2" loading="lazy">
+                            <button class="cerrar">Cerrar</button>
+                        </div>
+                    </div>
+                    <!--Carrousel-->
+                    <div class="bloque">
+                        <div class="carrousel" >
+                            <div class="grande">
+                                <img src="img/escenario1.webp" alt="Imagen 1" class="img">
+                                <img src="img/escenario2.heif" alt="Imagen 2" class="img">
+                                <img src="img/escenario3.jpeg" alt="Imagen 3" class="img">
+                            </div>  
+                            <ul class="puntos">
+                                <li class="punto activo"></li>
+                                <li class="punto"></li>
+                                <li class="punto"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bloque">
+                        <section id="seccion">
+                            <details>
+                               <summary id="contenido">Audio de fondo</summary><br>
+                               <h3 id="h3">Música de fondo</h3>
+                               <audio id="audio" src="audios/dark-ambient-atmosphere-2-141314.mp3" controls></audio>
+                            </details>
+                            <details>
+                               <summary id="contenido">Audios de los personajes</summary><br>
+                               <h3 id="h3">Audio de daño</h3>
+                               <audio id="audio" src="audios/Audios_hurt.ogg" controls></audio><br>
+                               <h3 id="h3">Audio de salto</h3>
+                               <audio id="audio" src="audios/Audios_jump.ogg" controls></audio><br>
+                               <h3 id="h3">Audio de ataque</h3>
+                               <audio id="audio" src="audios/Audios_attack.ogg" controls></audio><br>
+                               <h3 id="h3">Audio de muerte</h3>
+                               <audio id="audio" src="audios/Audios_kill.ogg" controls></audio>
+                            </details>
+                         </section>
+                    </div>
+                    <!--Video-->
+                    <div class="bloque">
+                        <video controls>
+                            <source src="img/nosferatu.mp4" type="video/mp4"/>
+                            Tu navegador no soporta mp4.
+                        </video>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--<footer>
+        <p>Francisco Marchena Guerrero</p>
+        <p>Diego Fornell Butrón</p>
+        <p>Sebastián García Recio</p>
+    </footer>-->
+</body>
+</html>

@@ -1,0 +1,3 @@
+[build]
+  command = "webpack --config webpack.config.js"
+  publish = "dist"
